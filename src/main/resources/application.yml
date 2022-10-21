@@ -1,0 +1,16 @@
+
+"%dev":
+  name: Jhonatan-dev
+  lastname: Mallqui-dev
+
+"%test":
+  name: Jhonatan-test
+  lastname: Mallqui-test
+
+"%prod":
+  name: Jhonatan-prod
+  lastname: Mallqui-prod
+
+cod:
+  error: E002
+

@@ -1,7 +1,7 @@
 D:\WORKSPACE_QUARKUS\clase1-rest\src\main\java\com\ws\service\IValidationData.java
 D:\WORKSPACE_QUARKUS\clase1-rest\src\main\java\com\ws\service\impl\FruitService.java
 D:\WORKSPACE_QUARKUS\clase1-rest\src\main\java\com\ws\service\IFruitService.java
+D:\WORKSPACE_QUARKUS\clase1-rest\src\main\java\com\ws\ApplicationInitQuarkus.java
 D:\WORKSPACE_QUARKUS\clase1-rest\src\main\java\com\ws\controller\AppController.java
-D:\WORKSPACE_QUARKUS\clase1-rest\src\main\java\com\ws\config\AppConfigBean.java
-D:\WORKSPACE_QUARKUS\clase1-rest\src\main\java\com\ws\config\AppLifecycleBean.java
+D:\WORKSPACE_QUARKUS\clase1-rest\src\main\java\com\ws\service\impl\FrutaService.java
 D:\WORKSPACE_QUARKUS\clase1-rest\src\main\java\com\ws\model\dto\FruitDto.java

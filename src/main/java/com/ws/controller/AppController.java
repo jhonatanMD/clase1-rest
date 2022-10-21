@@ -4,6 +4,7 @@ import com.ws.model.dto.FruitDto;
 import com.ws.service.IFruitService;
 import com.ws.service.IValidationData;
 import lombok.RequiredArgsConstructor;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -20,6 +21,17 @@ public class AppController {
     @Inject
     @Named("fruit")
     private IFruitService fruitService;
+
+
+
+    @ConfigProperty(name = "name")
+    private String name;
+
+    @ConfigProperty(name = "lastname")
+    private String lastname;
+
+    @ConfigProperty(name = "cod.error")
+    private String codError;
 
 
 
@@ -50,6 +62,17 @@ public class AppController {
             this.fruitService = fruitService;
         }
     */
+
+
+
+    @GET
+    @Path("/response")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response response() {
+        return Response.ok().entity(name + " " + lastname + " - code-error " + codError).build();
+    }
+
 
     @GET
     @Path("/get")
