@@ -1,16 +1,37 @@
-
 "%dev":
-  name: Jhonatan-dev
-  lastname: Mallqui-dev
+  data:
+    name: Jhonatan-dev
+    lastname: Mallqui-dev
+    age: 23
+    country: Peru
 
 "%test":
-  name: Jhonatan-test
-  lastname: Mallqui-test
+  data:
+    name: Jhonatan-test
+    lastname: Mallqui-test
+    age: 24
+    country: Ecuador
 
 "%prod":
-  name: Jhonatan-prod
-  lastname: Mallqui-prod
+  data:
+    name: Jhonatan-prod
+    lastname: Mallqui-prod
+    age: 25
+    country: Colombia
+
+"%local":
+  data:
+    name: Jhonatan-local
+    lastname: Mallqui-local
+    age: 26
+    country: Argentina
+
+
+
 
 cod:
   error: E002
+
+name: Juan
+lastname: Ramirez
 

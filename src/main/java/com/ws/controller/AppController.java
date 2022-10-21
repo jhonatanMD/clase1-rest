@@ -1,5 +1,7 @@
 package com.ws.controller;
 
+import com.ws.config.DataInfoProperties;
+import com.ws.config.DataProperties;
 import com.ws.model.dto.FruitDto;
 import com.ws.service.IFruitService;
 import com.ws.service.IValidationData;
@@ -33,6 +35,13 @@ public class AppController {
     @ConfigProperty(name = "cod.error")
     private String codError;
 
+
+
+    @Inject
+    private DataProperties dataProperties;
+
+    @Inject
+    private DataInfoProperties dataInfoProperties;
 
 
     /*
@@ -70,7 +79,9 @@ public class AppController {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public Response response() {
-        return Response.ok().entity(name + " " + lastname + " - code-error " + codError).build();
+       // return Response.ok().entity(name + " " + lastname + " - code-error " + codError).build();
+       // return Response.ok().entity(dataProperties.name() + "  " + dataProperties.lastname() + " " + dataProperties.age() + " " + dataProperties.country()).build();
+        return Response.ok().entity(dataInfoProperties.getName() + "  " + dataInfoProperties.getLastname() + " " + dataInfoProperties.getAge() + " " + dataInfoProperties.getCountry()).build();
     }
 
 
