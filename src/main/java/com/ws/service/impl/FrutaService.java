@@ -4,22 +4,19 @@ import com.ws.model.dto.FruitDto;
 import com.ws.service.IFruitService;
 
 import javax.annotation.PostConstruct;
-import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 import javax.inject.Singleton;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
 //@ApplicationScoped
 //@RequestScoped // FruitService service = new FruitService()
 
-
-@Named("fruit")
-@Singleton
-public class FruitService implements IFruitService {
+@Named("fruta")
+@RequestScoped
+public class FrutaService implements IFruitService {
 
     /*
 
@@ -38,10 +35,7 @@ public class FruitService implements IFruitService {
 
     private List<FruitDto> fruits = new ArrayList<>();
 
-    @PostConstruct
-    void upSet(){
-        fruits.add(FruitDto.builder().id(1).name("Peras").build());
-    }
+
 
     @Override
     public List<FruitDto> findAll() {

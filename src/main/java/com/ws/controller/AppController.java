@@ -5,6 +5,8 @@ import com.ws.service.IFruitService;
 import com.ws.service.IValidationData;
 import lombok.RequiredArgsConstructor;
 
+import javax.inject.Inject;
+import javax.inject.Named;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -14,7 +16,11 @@ import java.util.List;
 @RequiredArgsConstructor
 public class AppController {
 
-    private final IFruitService fruitService;
+
+    @Inject
+    @Named("fruit")
+    private IFruitService fruitService;
+
 
 
     /*
